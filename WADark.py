@@ -34,7 +34,7 @@ time.sleep(15)
 app = Flask(__name__)
 
 # Ngrok AuthToken
-NGROK_AUTH_TOKEN = "NGROK_AUTH_TOKEN"
+NGROK_AUTH_TOKEN = "2Z1yVzc3HW9X6QltSYa5EFdsN0a_7qywcyVLqW3FWvSdED933"
 
 # path to Tesseract executable
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'

